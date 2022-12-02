@@ -2,6 +2,7 @@
 
 ## Notas
 La aplicación está hecha con node.js y express.js
+El código relevante está en el directorio `routes/solver.js`
 
 ## Requerimientos
 - Sistema operativo: Linux, MacOS o Windows
