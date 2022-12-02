@@ -12,7 +12,7 @@ La aplicación está hecha con node.js y express.js
 
 1. Clonar el proyecto
 
-    Suponiendo que el directorio `~/Projects/` existe
+    Suponiendo que el directorio `~/Projects/` existe, desde una terminal :
 
     ```
     cd ~/Projects/
@@ -44,3 +44,5 @@ La aplicación está hecha con node.js y express.js
 7. En una nueva página se muestran los resultados
 
 8. Para cargar un nuevo archivo regrese a la página anterior [http://localhost:3000](http://localhost:3000)
+
+9. Para deterner la aplicación presiona `ctrl + c` en la terminal
