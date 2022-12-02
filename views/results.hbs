@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+    <style>
+      .cell {
+        text-align: center;
+        font-size: 14px;
+        padding: 4px;
+        font-weight: bold;
+        width: auto;
+        color: white;
+        font-family: sans-serif;
+      }
+      .board {
+        border: 1px solid black;
+        padding: 2px;
+      }
+      .simple_paragraph {
+        font-weight: bold;
+        font-family: sans-serif;
+      }
+    </style>
+</head>
+  <body>
+      <p class="simple_paragraph">Optimal Solution: {{matches}} ligth bulbs</p>
+      <table class="board">
+        <tbody>
+            {{#each list}}
+              <tr>
+                {{#each this}}
+                  <td class="cell" style="{{this.style}};">{{{this.icon}}}</td>
+                {{/each}}
+              </tr>
+            {{/each}}
+        </tbody>
+      </table>
+      <p class="simple_paragraph">Original matrix ({{rows}} x {{cols}})</p>
+      <table class="board">
+        <tbody>
+            {{#each list}}
+              <tr>
+                {{#each this}}
+                  <td class="cell" style="width: 5%; {{this.style}};">{{{this.value}}}</td>
+                {{/each}}
+              </tr>
+            {{/each}}
+        </tbody>
+      </table>
+  </body>
+</html>
