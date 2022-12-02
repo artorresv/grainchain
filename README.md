@@ -41,7 +41,9 @@ La aplicación está hecha con node.js y express.js
 
 6. Presiona el botón `Solve it!`
 
-7. En una nueva página se muestran los resultados
+7. En una nueva página se muestran los resultados, por ejemplo, para el archivo `public/test_data/8x8.txt`
+
+![image](https://user-images.githubusercontent.com/2172525/205293634-00bf24bd-c56f-4619-9e52-28d2b8504bb8.png)
 
 8. Para cargar un nuevo archivo regrese a la página anterior [http://localhost:3000](http://localhost:3000)
 
