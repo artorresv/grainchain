@@ -72,7 +72,7 @@ function scope(origin, cells, dimensions) {
 
       while (
         (neighbor_row >= 0 && neighbor_col >= 0) && 
-        (neighbor_row < dimensions.height-1 && neighbor_col < dimensions.width-1) && 
+        (neighbor_row < dimensions.height && neighbor_col < dimensions.width) && 
         (current_cell != 1)){
 
         switch (i) {
@@ -91,6 +91,9 @@ function scope(origin, cells, dimensions) {
         }
 
         if ((neighbor_row === -1 || neighbor_col === -1))
+          continue;
+
+        if (neighbor_row >= dimensions.height || neighbor_col >= dimensions.width)
           continue;
 
         current_cell = cells[neighbor_row][neighbor_col];
